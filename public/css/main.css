@@ -1,0 +1,13 @@
+.hide {
+    display: none;
+}
+.header {
+    background: black;
+    width: 100%;
+    text-align: center;
+    min-height: 45px;
+}
+
+.header svg {
+    max-height: 45px;
+}
