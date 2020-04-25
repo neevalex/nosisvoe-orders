@@ -95,29 +95,28 @@
 
         <div class="row">
                 <div class="col-12 mt-4">
+
                         <h3>Информация</h3>
-                        <strong>Номер Заказа:</strong> 0012 <br />
-                        <strong>Дата:</strong> 25.03 <br />
+                        <strong>Номер Заказа:</strong> <%= order.id %> <br />
+                        <strong>Дата:</strong> <%= date %>  <br />
                     </div>
 
             <div class="col-12 mt-4">
                 <h3>Заказчик</h3>
-                <strong>Имя:</strong> Иваненко Галина Ивановна <br />
-                <strong>Телефон:</strong> 38(063)3482446 <br />
-                <strong>Город:</strong> Ровно <br />
-                <strong>Отделение:</strong> 7 <br />
-                <strong>ТНН:</strong> 2400033000030 <br />
+                <strong>Имя:</strong> <%= order.name %> <br />
+                <strong>Телефон:</strong> <%= order.phone %> <br />
+                <strong>Город:</strong> <%= order.city %> <br />
+                <strong>Отделение:</strong> <%= order.np %> <br />
+                <strong>ТНН:</strong> <%= order.tnn %> <br />
 
             </div>
             <div class="col-12 mt-4">
 
                 <h3>Заказ</h3>
-                <p>- Кофточка ясельная | Рост: 56 (5036-024) 2шт | 240грн</p>
-                <p>- Вышиванка женская с коротким рукавом | Рост: 44 (8604-038-22) 2шт | 120грн</p>
-                <p>- Футболка для мальчика (детская) | Рост: 56 (6021097) 1шт | 44грн</p>
-                <p>- Кофточка ясельная | Рост: 56 (5036-024) 2шт | 240грн</p>
-                <p>- Вышиванка женская с коротким рукавом | Рост: 44 (8604-038-22) 2шт | 120грн</p>
-                <p>- Футболка для мальчика (детская) | Рост: 56 (6021097) 1шт | 44грн</p>
+
+                <% order.product.forEach( item => { %>
+                    <p>- <%= item %></p>
+                <% }) %>
                 <br />
                 
             </div>

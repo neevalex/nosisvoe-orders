@@ -11,3 +11,33 @@
 .header svg {
     max-height: 45px;
 }
+
+form {
+    width: 100%;
+    display: inline-block;
+}
+
+.err {
+    display: none;
+    color: red;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.submit.added {
+    background: #13d413;
+}
+
+.menu a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    border-bottom:1px dashed;
+}
+
+.orders .order {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}

@@ -13,17 +13,7 @@
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
-
-	<div class="copy hide">
-		<div class="control-group input-group" style="margin-top:10px">
-			<input type="text" name="product[]" class="form-control" placeholder="Платье Синее 00122_v2 4шт">
-			<div class="input-group-btn">
-				<button class="btn btn-danger remove" type="button"><i class="glyphicon glyphicon-remove"></i>
-					Убрать</button>
-			</div>
-		</div>
-	</div>
+<body class='orders'>
 
 	<div class="header">
 		<div class="container">
@@ -102,91 +92,12 @@
 		</div>
 	 </div>
  </div>
+
+
 	<div class="container">
 		<div class="row">
-			<form class='add'>
-				<div class="col-12 mt-4">
-					<h3>Заказчик</h3>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Имя</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="Галина Ивановна">
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Телефон</label>
-						<input type="text" class="form-control" id="phone" name="phone" placeholder="380633482446">
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Город</label>
-						<input type="text" class="form-control" id="city" name="city" placeholder="Ровно">
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Отделение НП</label>
-						<input type="text" class="form-control" id="NP" name='np' placeholder="123">
-					</div>
-				</div>
-				<div class="col-12 mt-4">
-
-					<h3>Заказ</h3>
-					<div class="input-group control-group after-add-more">
-						<input type="text" name="product[]" class="form-control"
-							placeholder="Платье Синее 00122_v2 4шт">
-						<div class="input-group-btn">
-							<button class="btn btn-success add-more" type="button"><i
-									class="glyphicon glyphicon-plus"></i> Еще</button>
-						</div>
-					</div>
-
-					<div class="form-group mt-3">
-						<label for="exampleFormControlInput1">Сумма</label>
-						<input type="text" class="form-control" id="total" name='total' placeholder="123">
-					</div>
-
-				</div>
-				<div class="col-12 mt-4">
-					<h3>Поставщик</h3>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Номер накладной НП (ТНН)</label>
-						<input type="text" class="form-control" id="tnn" name="tnn" placeholder="0123000002030000">
-					</div>
-
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="dealer" name="Рай"
-							value="Трикотажный Рай" checked="true">
-						<label class="form-check-label" for="inlineRadio1">Трикотажный Рай</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="dealer" id="seventeen"
-							value="Seventeen" name="seventeen">
-						<label class="form-check-label" for="inlineRadio2">Seventeen</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="dealer" id="uamoda" 
-							value="UaModa">
-						<label class="form-check-label" for="inlineRadio3">UaModa</label>
-					</div>
-				</div>
-
-				<div class="col-12 mt-4">
-					<h3>Источник</h3>
-
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="source"  value="Сайт" checked="true">
-						<label class="form-check-label" for="inlineRadio1">Сайт</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="source" value="Пром">
-						<label class="form-check-label" for="inlineRadio2">Пром</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="source" value="Звонок">
-						<label class="form-check-label" for="inlineRadio3">Телефон</label>
-					</div>
-				</div>
-
-				<div class="col-12 mt-4">
-					<button type="button" class="btn btn-primary submit">Заказать</button><div class="err"></div>
-				</div>
-			</form>
+            <div class="col-12 mt-4 orders">
+            </div>
 		</div>
 	</div>
 
